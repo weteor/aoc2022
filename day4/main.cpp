@@ -3,14 +3,13 @@
 
 using namespace std;
 
-
 int main(void)
 {
     fstream inputFile;
     inputFile.open("input.txt", ios::in );
     if(!inputFile.is_open()) {return -1;}
 
-    string line, first, second;
+    string line;
     unsigned int f1,f2, s1, s2;
     unsigned int containedPairs, overlapPairs = 0;
 
